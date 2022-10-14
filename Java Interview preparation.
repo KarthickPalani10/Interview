@@ -1,0 +1,46 @@
+Java Interview preparation.
+
+1,How to Reverse a String.
+
+import java.lang.reflect.Array;
+import java.util.*;
+
+public class ReverseAString {
+    public static void main(String[] args) {
+        //String reverse EX code Ec ways.......
+   /* String given = "agni";
+    StringBuffer buffer = new StringBuffer();
+    buffer.append(given);
+        System.out.println(buffer.reverse());
+        //num reverse EX code Ec ways.......
+        int num = 123456789;
+        StringBuffer buffer = new StringBuffer();
+        buffer.append(num);
+        System.out.println(buffer.reverse());*/
+        //use own logic
+       /* String given = "karthick";
+        char [] characterArray = given.toCharArray();
+        String reverse="";
+        for(int i =characterArray.length-1;i>=0;i--){
+            reverse=reverse+characterArray[i];
+        }
+        System.out.println(reverse);*/
+        String given = "karthick";
+        char [] array = given.toCharArray();
+        List<Character> list = new ArrayList<Character>();
+        for (Character character: array){
+            list.add(character);
+        }
+        Collections.reverse(list);
+        ListIterator iterator = list.listIterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }}}
+  -------------------------------------------------------------------------------------------------------------------------------      
+        
+        
+        
+        
+        
+        
+        
